@@ -1,0 +1,135 @@
+html {
+  font-family: "Fahkwang", sans-serif;
+}
+
+/* Generate */
+.pr-30 {
+  padding-right: 30% !important;
+}
+
+/* Custom animation cho marquee */
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.promote .marquee {
+  animation: marquee 15s linear infinite;
+}
+
+section {
+  padding: 0 1.875rem;
+  margin: 0 7.5rem;
+}
+
+h1 {
+  font-size: 2.5rem !important;
+  font-weight: 500 !important;
+  line-height: 3rem !important;
+}
+
+h3 {
+  font-size: 2rem !important;
+  font-weight: 500 !important;
+  line-height: 2.625rem !important;
+}
+
+/* .title {
+  color: #171717;
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 24px;
+  font-size: 0.875rem;
+} */
+
+/* Gift section */
+.gift {
+  background-image: url(../assets/img/banner_2.jpg);
+  background-size: cover;
+  background-clip: content-box;
+  color: #ffffff;
+}
+
+/* Special section */
+.countdown-item {
+  border: 1px solid #000000;
+  border-radius: 10px;
+}
+
+/* button play */
+.play-btn {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 5px solid rgba(255, 255, 255, 0.3); /* viền mờ */
+  background: rgba(0, 0, 0, 0.8); /* nền đen mờ */
+  /* position: relative; */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+/* icon tam giác play */
+.play-btn::before {
+  content: "";
+  position: absolute;
+  left: 53%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-top: 14px solid transparent;
+  border-bottom: 14px solid transparent;
+  border-left: 22px solid white;
+}
+
+/* ripple animation */
+.play-btn::after {
+  content: "";
+  position: absolute;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: scale(1);
+  opacity: 0;
+  animation: ripple 1.5s infinite;
+}
+
+/* keyframes cho ripple */
+@keyframes ripple {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  70% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
+/* Moment in motion section */
+@keyframes fade {
+  0% {
+    opacity: 0.8;
+  }
+  53% {
+    opacity: 0.95;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.animate-fade {
+  animation: fade 1.3s ease forwards;
+}
