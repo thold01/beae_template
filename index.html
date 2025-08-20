@@ -49,49 +49,88 @@
   <body class="h-screen">
     <!-- Banner section -->
     <section class="banner p-0 m-0">
-      <div class="flex">
+      <div class="flex flex-col md:flex-row">
         <img
-          class="w-2/3"
+          class="w-full md:w-2/3"
           src="assets/img/banner_1.jpg"
           alt="Summer Collection 2025"
         />
         <div
-          class="banner-content px-8 bg-[#101010] w-1/3 text-[#FFFFFF] flex flex-col justify-center gap-6"
+          class="banner-content px-6 md:px-14 bg-[#101010] w-full md:w-1/3 text-[#FFFFFF] flex flex-col justify-center gap-6 py-6 md:py-0"
         >
           <p class="font-bold text-white text-[14px]">JULY 2025 COLLECTION</p>
-          <p class="text-lg mt-2">Stay cool, stay stylish – all summer long</p>
+          <h2
+            class="font-medium text-[2rem] md:text-[2.5rem] leading-[2.5rem] md:leading-[3rem] tracking-normal"
+          >
+            Stay cool, stay stylish – all summer long
+          </h2>
           <p>
             Discover breezy skirts and effortless dresses made for sunny days
             and golden hours. From casual strolls to garden parties, find the
             perfect piece to shine with confidence this summer.
           </p>
           <a
-            href="#collection"
-            class="btn btn-secondary bg-[#FAFAFA] mt-4 text-[#000000] max-w-[188px] h-[52px] rounded-[100px] flex items-center justify-center"
-            >Shop Now</a
+            href="#!"
+            class="btn btn-secondary bg-[#FAFAFA] mt-4 text-[#000000] max-w-[188px] h-[52px] rounded-[100px] hover:bg-[#101010] hover:text-[#FAFAFA] flex items-center justify-center"
           >
+            Shop now &nbsp <i class="fa-solid fa-arrow-right icon"></i>
+          </a>
         </div>
       </div>
     </section>
 
     <!-- Promote -->
     <section class="promote p-0 m-0">
-      <!-- Marquee Container -->
       <div
-        class="overflow-hidden whitespace-nowrap bg-[#f5f5f5] text-[#171717] text-[1.1875rem] py-3 w-full"
+        class="w-full bg-[#e8e8e8] rounded-lg overflow-hidden shadow-md relative"
       >
-        <div class="marquee inline-block px-4 text-lg font-semibold">
-          Seasonal promotions happening now! &nbsp;&nbsp;&nbsp; Exclusive
-          discounts available now! &nbsp;&nbsp;&nbsp; Free shipping over $50!
-          &nbsp;&nbsp;&nbsp; New arrivals every week! &nbsp;&nbsp;&nbsp; Limited
-          time offer!
+        <div class="h-[60px] flex items-center bg-[#e8e8e8] overflow-hidden">
+          <div class="flex animate-[scroll_25s_linear_infinite] w-max">
+            <!-- Nội dung lặp lại 2 lần để cuộn liên tục -->
+            <div class="flex">
+              <span
+                class="promo-item px-4 text-sm md:px-8 text-gray-800 font-medium md:text-lg whitespace-nowrap"
+                >Get 10% off your first order!</span
+              >
+              <span
+                class="promo-item px-4 text-sm md:px-8 text-gray-800 font-medium md:text-lg whitespace-nowrap"
+                >Seasonal promotions happening now!</span
+              >
+              <span
+                class="promo-item px-4 text-sm md:px-8 text-gray-800 font-medium md:text-lg whitespace-nowrap"
+                >Exclusive discounts available now!</span
+              >
+              <span
+                class="promo-item px-4 text-sm md:px-8 text-gray-800 font-medium md:text-lg whitespace-nowrap"
+                >Free shipping over $50!</span
+              >
+            </div>
+            <div class="flex">
+              <span
+                class="promo-item px-4 text-sm md:px-8 text-gray-800 font-medium md:text-lg whitespace-nowrap"
+                >Get 10% off your first order!</span
+              >
+              <span
+                class="promo-item px-4 text-sm md:px-8 text-gray-800 font-medium md:text-lg whitespace-nowrap"
+                >Seasonal promotions happening now!</span
+              >
+              <span
+                class="promo-item px-4 text-sm md:px-8 text-gray-800 font-medium md:text-lg whitespace-nowrap"
+                >Exclusive discounts available now!</span
+              >
+              <span
+                class="promo-item px-4 text-sm md:px-8 text-gray-800 font-medium md:text-lg whitespace-nowrap"
+                >Free shipping over $50!</span
+              >
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Branch -->
-    <section class="branch py-[2.5rem] bg-white">
-      <div class="max-w-6xl mx-auto px-6 text-center">
+    <section class="branch py-[2.5rem] bg-white m-0 md:mx-[7.5rem]">
+      <div class="px-6 text-center">
         <!-- Subtitle -->
         <p class="text-sm uppercase tracking-widest text-gray-500 mb-2">
           Brands
@@ -107,51 +146,65 @@
         </p>
 
         <!-- Brand Logos -->
-        <div class="grid grid-cols-2 md:grid-cols-6 gap-6 items-center">
-          <div
-            class="bg-gray-100 flex items-center justify-center h-24 rounded-lg"
-          >
-            <span class="text-xl font-semibold">NOIRÉ</span>
+        <div class="grid grid-cols-3 md:grid-cols-6 gap-6 items-center">
+          <div class="bg-gray-100 flex items-center justify-center">
+            <img
+              src="assets/img/br1.jpg"
+              alt="NOIRÉ"
+              class="w-full h-full object-contain"
+            />
           </div>
-          <div
-            class="bg-gray-100 flex items-center justify-center h-24 rounded-lg"
-          >
-            <span class="text-xl font-semibold">VIVASA</span>
+          <div class="bg-gray-100 flex items-center justify-center">
+            <img
+              src="assets/img/br2.jpg"
+              alt="VIVASA"
+              class="w-full h-full object-contain"
+            />
           </div>
-          <div
-            class="bg-gray-100 flex items-center justify-center h-24 rounded-lg"
-          >
-            <span class="text-xl font-semibold">LUXÉLA</span>
+          <div class="bg-gray-100 flex items-center justify-center">
+            <img
+              src="assets/img/br3.jpg"
+              alt="LUXÉLA"
+              class="w-full h-full object-contain"
+            />
           </div>
-          <div
-            class="bg-gray-100 flex items-center justify-center h-24 rounded-lg"
-          >
-            <span class="text-xl font-semibold">HAZÉ</span>
+          <div class="bg-gray-100 flex items-center justify-center">
+            <img
+              src="assets/img/br4.jpg"
+              alt="HAZÉ"
+              class="w-full h-full object-contain"
+            />
           </div>
-          <div
-            class="bg-gray-100 flex items-center justify-center h-24 rounded-lg"
-          >
-            <span class="text-xl font-semibold">SOVA</span>
+          <div class="bg-gray-100 flex items-center justify-center">
+            <img
+              src="assets/img/br5.jpg"
+              alt="SOVA"
+              class="w-full h-full object-contain"
+            />
           </div>
-          <div
-            class="bg-gray-100 flex items-center justify-center h-24 rounded-lg"
-          >
-            <span class="text-xl font-semibold">PRADA</span>
+          <div class="bg-gray-100 flex items-center justify-center">
+            <img
+              src="assets/img/br6.jpg"
+              alt="PRADA"
+              class="w-full h-full object-contain"
+            />
           </div>
         </div>
       </div>
     </section>
 
     <!-- Collections -->
-    <section class="collections py-[2.5rem] bg-white">
-      <div class="max-w-6xl mx-auto px-6">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+    <section class="collections py-[2.5rem] bg-white m-0 md:mx-[7.5rem]">
+      <div class="">
+        <div
+          class="grid grid-cols-2 md:grid-cols-4 gap-2 h-[520px] md:h-[500px]"
+        >
           <!-- Item 1 -->
-          <div class="relative group overflow-hidden rounded-lg">
+          <div class="relative group overflow-hidden">
             <img
               src="assets/img/collection1.jpg"
               alt="Best Seller"
-              class="w-full h-[500px] object-cover transition-transform duration-500 group-hover:scale-105"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
             />
             <!-- Overlay -->
             <div
@@ -161,17 +214,17 @@
             <div
               class="absolute bottom-6 left-6 text-white transition duration-500 group-hover:translate-y-[-5px]"
             >
-              <h3 class="text-xl font-semibold">Best seller</h3>
+              <p class="text-[19px] leading-[29px] font-normal">Best seller</p>
               <p class="text-sm">21 products</p>
             </div>
           </div>
 
           <!-- Item 2 -->
-          <div class="relative group overflow-hidden rounded-lg">
+          <div class="relative group overflow-hidden">
             <img
               src="assets/img/collection2.jpg"
               alt="Skirts"
-              class="w-full h-[500px] object-cover transition-transform duration-500 group-hover:scale-105"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
             />
             <div
               class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition duration-500"
@@ -179,17 +232,17 @@
             <div
               class="absolute bottom-6 left-6 text-white transition duration-500 group-hover:translate-y-[-5px]"
             >
-              <h3 class="text-xl font-semibold">Skirts</h3>
+              <p class="text-[19px] leading-[29px] font-normal">Skirts</p>
               <p class="text-sm">30 products</p>
             </div>
           </div>
 
           <!-- Item 3 -->
-          <div class="relative group overflow-hidden rounded-lg">
+          <div class="relative group overflow-hidden">
             <img
               src="assets/img/collection3.jpg"
               alt="Bottoms"
-              class="w-full h-[500px] object-cover transition-transform duration-500 group-hover:scale-105"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
             />
             <div
               class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition duration-500"
@@ -197,17 +250,17 @@
             <div
               class="absolute bottom-6 left-6 text-white transition duration-500 group-hover:translate-y-[-5px]"
             >
-              <h3 class="text-xl font-semibold">Bottoms</h3>
+              <p class="text-[19px] leading-[29px] font-normal">Bottoms</p>
               <p class="text-sm">25 products</p>
             </div>
           </div>
 
           <!-- Item 4 -->
-          <div class="relative group overflow-hidden rounded-lg">
+          <div class="relative group overflow-hidden">
             <img
               src="assets/img/collection4.jpg"
               alt="Accessories"
-              class="w-full h-[500px] object-cover transition-transform duration-500 group-hover:scale-105"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
             />
             <div
               class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition duration-500"
@@ -216,22 +269,27 @@
               class="absolute bottom-6 left-6 right-6 flex items-center justify-between text-white transition duration-500 group-hover:translate-y-[-5px]"
             >
               <div>
-                <h3 class="text-xl font-semibold">Accessories</h3>
+                <p class="text-[19px] leading-[29px] font-normal">
+                  Accessories
+                </p>
                 <p class="text-sm">35 products</p>
               </div>
               <a
                 href="#"
                 class="text-sm font-medium underline hover:no-underline"
-                >Shop Now →</a
-              >
+                >Shop now &nbsp <i class="fa-solid fa-arrow-right icon"></i
+              ></a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Gift section -->
     <section class="gift py-[2.5rem] min-w-[10rem]">
-      <div class="flex p-12 justify-between">
+      <div
+        class="flex flex-col md:flex-row p-12 justify-between gap-6 md:gap-0 text-center md:text-left"
+      >
         <div class="title">
           <h3 class="text-[28px]">Celebrate Summer Beauty – A Gift of Style</h3>
           <p>
@@ -240,10 +298,11 @@
           </p>
         </div>
         <a
-          href="#explore_collection"
-          class="btn btn-secondary bg-[#FAFAFA] self-center text-[#000000] min-w-[18rem] h-[52px] rounded-[100px] flex items-center justify-center"
-          >Explore the Collection</a
+          href="#!"
+          class="btn btn-secondary bg-[#FAFAFA] self-center md:self-auto text-[#000000] min-w-[18rem] h-[52px] rounded-[100px] flex items-center justify-center"
         >
+          Explore the Collection
+        </a>
       </div>
     </section>
 
@@ -287,15 +346,15 @@
 
       <!-- Swiper Container -->
       <div class="swiper productSwiper">
-        <div class="swiper-wrapper">
+        <div class="swiper-wrapper md:h-[500px]">
           <!-- Item 1 -->
           <div class="swiper-slide relative group">
             <img
               src="./assets//img/product1.jpg"
-              class="w-full h-[500px] object-cover rounded-xl"
+              class="w-full h-full object-cover"
             />
             <div
-              class="absolute inset-0 bg-black/40 flex flex-col justify-end p-6 text-white rounded-xl transition duration-500 group-hover:bg-black/60"
+              class="absolute inset-0 bg-black/40 flex flex-col justify-end p-6 text-white transition duration-500 group-hover:bg-black/60"
             >
               <h3 class="text-xl font-bold">Best seller</h3>
               <p>21 products</p>
@@ -306,10 +365,10 @@
           <div class="swiper-slide relative group">
             <img
               src="./assets/img/product2.jpg"
-              class="w-full h-[500px] object-cover rounded-xl"
+              class="w-full h-full object-cover"
             />
             <div
-              class="absolute inset-0 bg-black/40 flex flex-col justify-end p-6 text-white rounded-xl transition duration-500 group-hover:bg-black/60"
+              class="absolute inset-0 bg-black/40 flex flex-col justify-end p-6 text-white transition duration-500 group-hover:bg-black/60"
             >
               <h3 class="text-xl font-bold">Skirts</h3>
               <p>30 products</p>
@@ -320,10 +379,10 @@
           <div class="swiper-slide relative group">
             <img
               src="./assets/img/product3.jpg"
-              class="w-full h-[500px] object-cover rounded-xl"
+              class="w-full h-full object-cover"
             />
             <div
-              class="absolute inset-0 bg-black/40 flex flex-col justify-end p-6 text-white rounded-xl transition duration-500 group-hover:bg-black/60"
+              class="absolute inset-0 bg-black/40 flex flex-col justify-end p-6 text-white transition duration-500 group-hover:bg-black/60"
             >
               <h3 class="text-xl font-bold">Bottoms</h3>
               <p>25 products</p>
@@ -334,10 +393,10 @@
           <div class="swiper-slide relative group">
             <img
               src="./assets/img/product4.jpg"
-              class="w-full h-[500px] object-cover rounded-xl"
+              class="w-full h-full object-cover"
             />
             <div
-              class="absolute inset-0 bg-black/40 flex flex-col justify-end p-6 text-white rounded-xl transition duration-500 group-hover:bg-black/60"
+              class="absolute inset-0 bg-black/40 flex flex-col justify-end p-6 text-white transition duration-500 group-hover:bg-black/60"
             >
               <h3 class="text-xl font-bold">Accessories</h3>
               <p>35 products</p>
@@ -345,7 +404,7 @@
                 href="#"
                 class="mt-2 inline-flex items-center text-sm underline"
               >
-                Shop Now →
+                Shop now &nbsp <i class="fa-solid fa-arrow-right icon"></i>
               </a>
             </div>
           </div>
@@ -354,10 +413,10 @@
           <div class="swiper-slide relative group">
             <img
               src="./assets/img/product5.jpg"
-              class="w-full h-[500px] object-cover rounded-xl"
+              class="w-full h-full object-cover"
             />
             <div
-              class="absolute inset-0 bg-black/40 flex flex-col justify-end p-6 text-white rounded-xl transition duration-500 group-hover:bg-black/60"
+              class="absolute inset-0 bg-black/40 flex flex-col justify-end p-6 text-white transition duration-500 group-hover:bg-black/60"
             >
               <h3 class="text-xl font-bold">Accessories</h3>
               <p>35 products</p>
@@ -365,7 +424,7 @@
                 href="#"
                 class="mt-2 inline-flex items-center text-sm underline"
               >
-                Shop Now →
+                Shop now &nbsp <i class="fa-solid fa-arrow-right icon"></i>
               </a>
             </div>
           </div>
@@ -373,10 +432,10 @@
           <div class="swiper-slide relative group">
             <img
               src="./assets/img/product6.jpg"
-              class="w-full h-[500px] object-cover rounded-xl"
+              class="w-full h-full object-cover"
             />
             <div
-              class="absolute inset-0 bg-black/40 flex flex-col justify-end p-6 text-white rounded-xl transition duration-500 group-hover:bg-black/60"
+              class="absolute inset-0 bg-black/40 flex flex-col justify-end p-6 text-white transition duration-500 group-hover:bg-black/60"
             >
               <h3 class="text-xl font-bold">Accessories</h3>
               <p>35 products</p>
@@ -384,7 +443,7 @@
                 href="#"
                 class="mt-2 inline-flex items-center text-sm underline"
               >
-                Shop Now →
+                Shop now &nbsp <i class="fa-solid fa-arrow-right icon"></i>
               </a>
             </div>
           </div>
@@ -393,86 +452,112 @@
     </section>
 
     <!-- Specials -->
-    <section class="py-0 py-[2.5rem]">
-      <div class="flex">
+    <section class="py-[2.5rem]">
+      <div class="flex flex-col md:flex-row">
+        <!-- Left Panel -->
         <div
-          class="w-3/5 bg-[#f5f5f5] flex flex-col gap-2 justify-between p-[3.125rem]"
+          class="w-full md:w-3/5 bg-[#f5f5f5] flex flex-col gap-2 justify-between p-[1.5rem] md:p-[3.125rem]"
         >
           <p class="title text-sm font-normal leading-6 tracking-[2px]">
             Specials
           </p>
-          <h1 class="w-[80%]">
+          <h1
+            class="w-full md:w-[80%] text-[1.5rem] md:text-[2rem] leading-snug"
+          >
             Discover Irresistible Offers Waiting to Be Yours
           </h1>
-          <p>Harry up. the attactive offers are limited in quantity!</p>
-          <div class="clock">
-            <div class="flex items-center gap-2 w-[70%]">
+          <p class="pt-4 md:pt-6 text-sm md:text-base">
+            Harry up. the attractive offers are limited in quantity!
+          </p>
+
+          <!-- Countdown -->
+          <div class="clock pt-3">
+            <div class="flex items-center gap-2 w-full md:w-[70%] text-center">
               <div
-                class="countdown-item flex flex-1 flex-col items-center p-4 rounded-[10px]"
+                class="countdown-item flex flex-1 flex-col items-center p-3 md:p-4 rounded-[10px]"
               >
-                <span class="countdown-number">12</span>
-                <span class="countdown-label">Days</span>
+                <span class="countdown-number text-lg md:text-xl font-bold"
+                  >12</span
+                >
+                <span class="countdown-label text-xs md:text-sm">DAYS</span>
               </div>
-              <span class="text-2xl font-bold text-black mx-1">:</span>
-              <div
-                class="countdown-item flex flex-1 flex-col items-center p-4 rounded-[10px]"
+              <span class="text-lg md:text-2xl font-bold text-black mx-1"
+                >:</span
               >
-                <span class="countdown-number">24</span>
-                <span class="countdown-label">Hours</span>
+              <div
+                class="countdown-item flex flex-1 flex-col items-center p-3 md:p-4 rounded-[10px]"
+              >
+                <span class="countdown-number text-lg md:text-xl font-bold"
+                  >24</span
+                >
+                <span class="countdown-label text-xs md:text-sm">HOURS</span>
               </div>
-              <span class="text-2xl font-bold text-black mx-1">:</span>
-              <div
-                class="countdown-item flex flex-1 flex-col items-center p-4 rounded-[10px]"
+              <span class="text-lg md:text-2xl font-bold text-black mx-1"
+                >:</span
               >
-                <span class="countdown-number">36</span>
-                <span class="countdown-label">Minutes</span>
+              <div
+                class="countdown-item flex flex-1 flex-col items-center p-3 md:p-4 rounded-[10px]"
+              >
+                <span class="countdown-number text-lg md:text-xl font-bold"
+                  >36</span
+                >
+                <span class="countdown-label text-xs md:text-sm">MINS</span>
               </div>
-              <span class="text-2xl font-bold text-black mx-1">:</span>
-              <div
-                class="countdown-item flex flex-1 flex-col items-center p-4 rounded-[10px]"
+              <span class="text-lg md:text-2xl font-bold text-black mx-1"
+                >:</span
               >
-                <span class="countdown-number">48</span>
-                <span class="countdown-label">Seconds</span>
+              <div
+                class="countdown-item flex flex-1 flex-col items-center p-3 md:p-4 rounded-[10px]"
+              >
+                <span class="countdown-number text-lg md:text-xl font-bold"
+                  >48</span
+                >
+                <span class="countdown-label text-xs md:text-sm">SECS</span>
               </div>
             </div>
           </div>
+
           <a
             href="#explore_collection"
-            class="btn bg-[#000000] hover:bg-[#646464] text-[#FAFAFA] mt-[40px] max-w-[18rem] h-[52px] rounded-[100px] flex items-center justify-center"
+            class="btn bg-[#000000] hover:bg-[#646464] text-[#FAFAFA] mt-[30px] md:mt-[40px] max-w-[18rem] h-[45px] md:h-[52px] rounded-[100px] flex items-center justify-center text-sm md:text-base"
             >Explore the Collection</a
           >
         </div>
-        <div class="relative w-2/5 aspect-video">
-          <!-- Thumbnail (hiển thị mặc định) -->
+
+        <!-- Right Panel -->
+        <div class="relative w-full md:w-2/5 aspect-video">
+          <!-- Thumbnail -->
           <div id="thumbnail" class="relative w-full h-full">
             <img
               src="assets/img/image_special.jpg"
               alt="Video thumbnail"
               class="w-full h-full object-cover"
             />
-            <!-- Nút Play -->
+            <!-- Play button -->
             <button
               id="playBtn"
               class="play-btn absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 inset-0 flex items-center justify-center bg-black transition"
             ></button>
           </div>
 
-          <!-- Video + nút close (ẩn mặc định) -->
-          <div id="videoWrapper" class="hidden relative w-full h-full">
-            <iframe
+          <!-- Video -->
+          <div id="videoWrapper" class="hidden relative w-full h-full group">
+            <video
+              controls
               id="videoPlayer"
-              class="w-full h-full"
-              src="https://www.youtube.com/embed/5GJR0cqTD78"
-              title="How to Advertise your Shopify Store (FOR FREE)"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
-            <!-- Nút X -->
+              poster="../../assets/img/banner_6.jpg"
+              class="w-full h-full object-cover object-center aspect-[1.3/1]"
+            >
+              <source
+                src="https://cdn.shopify.com/videos/c/o/v/06a253f53619450aa6076abb76a322ca.mp4"
+                type="video/mp4"
+              />
+            </video>
+
+            <!-- Close Btn -->
             <button
               id="closeBtn"
-              class="absolute top-3 right-3 bg-black/70 text-white rounded-full p-2 hover:bg-black transition"
+              class="absolute top-3 right-3 text-black rounded-full w-[24px] h-[24px] bg-[#FFFFFF] flex items-center justify-center p-5 font-medium transition hidden group-hover:flex"
             >
               ✕
             </button>
@@ -482,40 +567,51 @@
     </section>
 
     <!-- Celebrate -->
-    <section class="py-0 py-[2.5rem]">
-      <div class="flex">
-        <div class="w-2/5 flex flex-col gap-2 justify-center p-[3.125rem]">
+    <section class="py-[2.5rem]">
+      <div class="flex flex-col md:flex-row">
+        <!-- Left Content -->
+        <div
+          class="w-full md:w-2/5 flex flex-col gap-2 justify-center p-[1.5rem] md:p-[3.125rem]"
+        >
           <p class="title text-sm font-normal leading-6 tracking-[2px]">
             CELEBRATE MOM WITH LOVE
           </p>
-          <h3 class="w-[80%]">Embrace Boldness With Statement Style</h3>
-          <p>
+          <h3
+            class="w-full md:w-[80%] text-[1.5rem] md:text-[2rem] leading-snug"
+          >
+            Embrace Boldness With Statement Style
+          </h3>
+          <p class="text-sm md:text-base">
             Step into summer with skirts and dresses that turn heads. From flowy
             silhouettes to playful prints, make every look unforgettable.
           </p>
           <a
-            href="#explore_collection"
-            class="btn bg-[#646464] text-[#FFFFFF] mt-[40px] max-w-[12rem] h-[52px] rounded-[100px] flex items-center justify-center"
-            >Shop Now -></a
-          >
+            href="#!"
+            class="btn bg-[#646464] text-[#FFFFFF] mt-[30px] md:mt-[40px] max-w-[10rem] md:max-w-[12rem] h-[45px] md:h-[52px] rounded-[100px] flex items-center justify-center text-sm md:text-base"
+            >Shop now &nbsp <i class="fa-solid fa-arrow-right icon"></i
+          ></a>
         </div>
-        <div class="w-3/5 flex gap-4">
-          <img
-            src="./assets/img/banner_5.jpg"
-            alt="banner5"
-            class="min-w-[400px] object-cover shadow"
-          />
 
-          <div class="grid grid-cols-1 gap-4">
+        <!-- Right Images -->
+        <div class="w-full md:w-3/5 grid grid-cols-2 gap-4 px-[1.5rem] md:px-0">
+          <div class="flex-1">
+            <img
+              src="./assets/img/banner_5.jpg"
+              alt="banner5"
+              class="w-full h-full object-cover h-auto shadow"
+            />
+          </div>
+
+          <div class="grid flex-1 grid-cols-1 gap-4 w-full">
             <img
               src="./assets/img/banner3.jpg"
               alt="banner3"
-              class="min-w-[400px] object-cover shadow"
+              class="w-full md:min-w-[400px] object-cover shadow w-full aspect-[4/3]"
             />
             <img
               src="./assets/img/banner_7.jpg"
               alt="banner7"
-              class="min-w-[400px] object-cover shadow"
+              class="w-full md:min-w-[400px] object-cover shadow w-full aspect-[4/3]"
             />
           </div>
         </div>
@@ -523,7 +619,7 @@
     </section>
 
     <!-- Service Highlight section -->
-    <section class="py-12 bg-white">
+    <section class="py-[2.5rem] bg-white">
       <div
         class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8 text-center"
       >
@@ -763,6 +859,411 @@
         </div>
       </div>
     </section>
+
+    <!-- Customer review section -->
+    <section class="bg-[#f5f5f5] m-0">
+      <div class="testimonials py-16 px-4">
+        <!-- Heading -->
+        <div class="text-center mb-12">
+          <p
+            class="text-center leading-[24px] font-normal tracking-[2px] font-normal text-[#171717] text-[14px]"
+          >
+            TESTIMONIALS
+          </p>
+          <p
+            class="text-center leading-[42px] font-normal tracking-[2px] font-medium text-[#171717] text-[32px]"
+          >
+            Our Customers Reviews
+          </p>
+        </div>
+
+        <!-- Swiper -->
+        <div class="swiper swiperReview max-w-6xl mx-auto">
+          <div class="swiper-wrapper">
+            <!-- Slide -->
+            <div
+              class="swiper-slide min-h-[344px] p-6 flex flex-col justify-around items-center text-center"
+            >
+              <div class="flex justify-center text-red-500 mb-3">
+                <i class="fa-solid fa-star mr-1"></i>
+                <i class="fa-solid fa-star mr-1"></i>
+                <i class="fa-solid fa-star mr-1"></i>
+                <i class="fa-solid fa-star mr-1"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p
+                class="text-sm text-center leading-[24px] font-normal tracking-[2px] font-bold text-[#171717] text-[14px]"
+              >
+                It was light, breathable, and felt like it was made just for me.
+                I could move freely, dance, sit on the grass, and still feel
+                completely put-together.
+              </p>
+              <div class="flex items-center justify-center">
+                <img
+                  src="../assets/img/image.jpg"
+                  class="w-12 h-12 rounded-full object-cover"
+                />
+                <div class="ml-3 text-left">
+                  <p class="font-semibold text-gray-800">Emily R.</p>
+                  <p class="text-sm text-gray-500">From Australia</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide -->
+            <div
+              class="swiper-slide min-h-[344px] p-6 flex flex-col justify-around items-center text-center"
+            >
+              <div class="flex justify-center text-red-500 mb-3">
+                <i class="fa-solid fa-star mr-1"></i>
+                <i class="fa-solid fa-star mr-1"></i>
+                <i class="fa-solid fa-star mr-1"></i>
+                <i class="fa-solid fa-star mr-1"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="text-gray-600 mb-6 max-w-md">
+                The cut hugs my waist just right without being tight, and the
+                flare adds a soft, feminine shape. Effortlessly chic!
+              </p>
+              <div class="flex items-center justify-center">
+                <img
+                  src="../assets/img/image-1.jpg"
+                  class="w-12 h-12 rounded-full object-cover"
+                />
+                <div class="ml-3 text-left">
+                  <p class="font-semibold text-gray-800">Sofia L.</p>
+                  <p class="text-sm text-gray-500">From Canada</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide -->
+            <div
+              class="swiper-slide min-h-[344px] p-6 flex flex-col justify-around items-center text-center"
+            >
+              <div class="flex justify-center text-red-500 mb-3">
+                <i class="fa-solid fa-star mr-1"></i>
+                <i class="fa-solid fa-star mr-1"></i>
+                <i class="fa-solid fa-star mr-1"></i>
+                <i class="fa-solid fa-star mr-1"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="text-gray-600 mb-6 max-w-md">
+                This dress gave me the best of both worlds. Soft, flowy, and
+                timeless — perfect for brunch!
+              </p>
+              <div class="flex items-center justify-center">
+                <img
+                  src="../assets/img/image-2.jpg"
+                  class="w-12 h-12 rounded-full object-cover"
+                />
+                <div class="ml-3 text-left">
+                  <p class="font-semibold text-gray-800">Chloe M.</p>
+                  <p class="text-sm text-gray-500">United Kingdom</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide -->
+            <div
+              class="swiper-slide min-h-[344px] p-6 flex flex-col justify-around items-center text-center"
+            >
+              <div class="flex justify-center text-red-500 mb-3">
+                <i class="fa-solid fa-star mr-1"></i>
+                <i class="fa-solid fa-star mr-1"></i>
+                <i class="fa-solid fa-star mr-1"></i>
+                <i class="fa-solid fa-star mr-1"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="text-gray-600 mb-6 max-w-md">
+                This dress gave me the best of both worlds. Soft, flowy, and
+                timeless — perfect for brunch!
+              </p>
+              <div class="flex items-center justify-center">
+                <img
+                  src="../assets/img/image-3.jpg"
+                  class="w-12 h-12 rounded-full object-cover"
+                />
+                <div class="ml-3 text-left">
+                  <p class="font-semibold text-gray-800">Chloe M.</p>
+                  <p class="text-sm text-gray-500">United Kingdom</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide -->
+            <div
+              class="swiper-slide min-h-[344px] p-6 flex flex-col justify-around items-center text-center"
+            >
+              <div class="flex justify-center text-red-500 mb-3">
+                <i class="fa-solid fa-star mr-1"></i>
+                <i class="fa-solid fa-star mr-1"></i>
+                <i class="fa-solid fa-star mr-1"></i>
+                <i class="fa-solid fa-star mr-1"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="text-gray-600 mb-6 max-w-md">
+                This dress gave me the best of both worlds. Soft, flowy, and
+                timeless — perfect for brunch!
+              </p>
+              <div class="flex items-center justify-center">
+                <img
+                  src="../assets/img/image-4.jpg"
+                  class="w-12 h-12 rounded-full object-cover"
+                />
+                <div class="ml-3 text-left">
+                  <p class="font-semibold text-gray-800">Chloe M.</p>
+                  <p class="text-sm text-gray-500">United Kingdom</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pagination Dots -->
+          <div class="swiper-pagination mt-[2rem] relative"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FQAs section -->
+    <section class="py-[5rem]">
+      <div class="text-[#171717]">
+        <div>
+          <p
+            class="text-sm text-center leading-[24px] font-normal tracking-[2px]"
+          >
+            FAQS
+          </p>
+          <h2 class="font-medium text-[32px] leading-[42px] text-center">
+            Frequently Asked Question
+          </h2>
+        </div>
+
+        <div class="flex-1 py-4 pb-5 bg-white mx-[10vmax]">
+          <div
+            class="faq-item mb-[14px] pb-[10px] active"
+            style="border-bottom: 1px solid #e0e0e0"
+          >
+            <div
+              class="faq-toggle flex justify-between items-center cursor-pointer py-[10px] transition-all duration-300 ease-in-out"
+            >
+              <div class="font-semibold text-[19px] leading-[29px]">
+                What is your return and exchange policy?
+              </div>
+              <div
+                class="faq-icon text-[14px] font-light text-black transition-all duration-[400ms] ease-[cubic-bezier(0.16,1,0.3,1)] w-6 h-6 flex items-center justify-center"
+              >
+                -
+              </div>
+            </div>
+            <div
+              class="faq-content text-base max-h-0 overflow-hidden transition-all duration-[600ms] ease-[cubic-bezier(0.16,1,0.3,1)] opacity-0 translate-y-[-10px] pb-3 [&.active]:max-h-[270px] [&.active]:opacity-100 [&.active]:translate-y-0 flex-1"
+            >
+              <p>
+                We accept returns or exchanges within 30 days, as long as items
+                are unworn, in original condition with tags attached. Please
+                contact us for the return address.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="faq-item mb-[14px] pb-[10px]"
+            style="border-bottom: 1px solid #e0e0e0"
+          >
+            <div
+              class="faq-toggle flex justify-between items-center cursor-pointer py-[10px] transition-all duration-300 ease-in-out"
+            >
+              <div class="font-semibold text-[19px] leading-[29px]">
+                Do you ship internationally?
+              </div>
+              <div
+                class="faq-icon text-[14px] font-light text-black transition-all duration-[400ms] ease-[cubic-bezier(0.16,1,0.3,1)] w-6 h-6 flex items-center justify-center"
+              >
+                +
+              </div>
+            </div>
+            <div
+              class="faq-content text-base max-h-0 overflow-hidden transition-all duration-[600ms] ease-[cubic-bezier(0.16,1,0.3,1)] opacity-0 translate-y-[-10px] pb-3 [&.active]:max-h-[270px] [&.active]:opacity-100 [&.active]:translate-y-0"
+            >
+              <p>
+                Yes, we offer international shipping. Shipping costs and
+                delivery times vary by location and will be calculated at
+                checkout.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="faq-item mb-[14px] pb-[10px]"
+            style="border-bottom: 1px solid #e0e0e0"
+          >
+            <div
+              class="faq-toggle flex justify-between items-center cursor-pointer py-[10px] transition-all duration-300 ease-in-out"
+            >
+              <div class="font-semibold text-[19px] leading-[29px]">
+                When will my order be shipped?
+              </div>
+              <div
+                class="faq-icon text-[14px] font-light text-black transition-all duration-[400ms] ease-[cubic-bezier(0.16,1,0.3,1)] w-6 h-6 flex items-center justify-center"
+              >
+                +
+              </div>
+            </div>
+            <div
+              class="faq-content text-base max-h-0 overflow-hidden transition-all duration-[600ms] ease-[cubic-bezier(0.16,1,0.3,1)] opacity-0 translate-y-[-10px] pb-3 [&.active]:max-h-[270px] [&.active]:opacity-100 [&.active]:translate-y-0"
+            >
+              <p>
+                Orders are usually processed within 1–3 business days. Once
+                shipped, you'll receive a confirmation email with tracking
+                details.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="faq-item mb-[14px] pb-[10px]"
+            style="border-bottom: 1px solid #e0e0e0"
+          >
+            <div
+              class="faq-toggle flex justify-between items-center cursor-pointer py-[10px] transition-all duration-300 ease-in-out"
+            >
+              <div class="font-semibold text-[19px] leading-[29px]">
+                Can I make changes to my order after it's been placed?
+              </div>
+              <div
+                class="faq-icon text-[14px] font-light text-black transition-all duration-[400ms] ease-[cubic-bezier(0.16,1,0.3,1)] w-6 h-6 flex items-center justify-center"
+              >
+                +
+              </div>
+            </div>
+            <div
+              class="faq-content text-base max-h-0 overflow-hidden transition-all duration-[600ms] ease-[cubic-bezier(0.16,1,0.3,1)] opacity-0 translate-y-[-10px] pb-3 [&.active]:max-h-[270px] [&.active]:opacity-100 [&.active]:translate-y-0"
+            >
+              <p>
+                If your order hasn’t been shipped yet, we’ll do our best to
+                help. Please contact us as soon as possible for any changes.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="faq-item mb-[14px] pb-[10px]"
+            style="border-bottom: 1px solid #e0e0e0"
+          >
+            <div
+              class="faq-toggle flex justify-between items-center cursor-pointer py-[10px] transition-all duration-300 ease-in-out"
+            >
+              <div class="font-semibold text-[19px] leading-[29px]">
+                How should I care for my items?
+              </div>
+              <div
+                class="faq-icon text-[14px] font-light text-black transition-all duration-[400ms] ease-[cubic-bezier(0.16,1,0.3,1)] w-6 h-6 flex items-center justify-center"
+              >
+                +
+              </div>
+            </div>
+            <div
+              class="faq-content text-base max-h-0 overflow-hidden transition-all duration-[600ms] ease-[cubic-bezier(0.16,1,0.3,1)] opacity-0 translate-y-[-10px] pb-3 [&.active]:max-h-[270px] [&.active]:opacity-100 [&.active]:translate-y-0"
+            >
+              <p>
+                Each product comes with care instructions on the label. We
+                recommend cold wash and air dry for most garments. For special
+                fabrics like satin or sequins, gentle care is advised.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="p-0 m-0">
+      <div class="bg-[#101010] py-[50px] px-[20px]">
+        <div
+          class="grid grid-cols-1 md:grid-cols-[7fr_5fr] mx-0 md:mx-[150px] gap-6"
+        >
+          <!-- Left text -->
+          <div class="flex flex-col text-center md:text-left">
+            <p
+              class="uppercase text-[0.96rem] font-normal tracking-[2px] text-white mb-3"
+            >
+              Unlock Special Deals
+            </p>
+            <p
+              class="text-[28px] md:text-[32px] leading-[36px] md:leading-[42px] text-white"
+            >
+              Join Our Fashion Family for Special Offers
+            </p>
+          </div>
+
+          <!-- Right form -->
+          <div class="flex justify-center md:justify-end">
+            <div
+              class="flex items-center relative w-full max-w-[400px] rounded-[100px]"
+            >
+              <input
+                placeholder="Enter your email"
+                class="h-[52px] px-[24px] text-[12px] w-full rounded-[99px] border-none text-[1rem]"
+              />
+
+              <button
+                class="h-[52px] absolute right-0 py-[12px] px-[24px] bg-[#b91c1b] rounded-[99px] border-none"
+              >
+                <span class="text-white text-[1rem]">Subscribe</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chat icon -->
+    <div class="fixed bottom-4 right-4 z-50">
+      <!-- Popup -->
+      <div
+        id="chat-popup"
+        class="hidden w-80 h-96 rounded-2xl shadow-lg flex flex-col"
+      >
+        <!-- Header -->
+        <div
+          class="flex justify-between items-center px-4 py-2 bg-blue-600 rounded-t-2xl"
+        >
+          <h3 class="text-white font-medium">Chat with us</h3>
+          <button id="close-btn" class="text-white text-xl">&times;</button>
+        </div>
+        <!-- Body -->
+        <div class="flex-1 p-4 overflow-y-auto text-sm text-gray-700">
+          <p>Hello 👋, how can we help you?</p>
+        </div>
+        <!-- Input -->
+        <div class="p-2 border-t flex">
+          <input
+            type="text"
+            placeholder="Type a message..."
+            class="flex-1 px-3 py-2 text-sm border rounded-lg focus:outline-none"
+          />
+          <button class="ml-2 px-4 py-2 bg-blue-600 text-white rounded-lg">
+            Send
+          </button>
+        </div>
+      </div>
+
+      <!-- Chat Button -->
+      <div class="flex justify-end">
+        <button
+          id="chat-btn"
+          class="w-14 h-14 bg-blue-600 text-white rounded-full flex items-center justify-center shadow-lg text-2xl"
+        >
+          <img
+            id="chat-icon"
+            src="./assets/img/icon.png"
+            alt="chat"
+            class="w-6 h-6 object-contain"
+          />
+        </button>
+      </div>
+    </div>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

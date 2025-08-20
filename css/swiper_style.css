@@ -2,3 +2,16 @@
 .swiper-button-prev::after {
   content: none;
 }
+
+/* Review section */
+.swiper-pagination-bullet {
+  border-radius: 0 !important;
+  width: 24px !important;
+  height: 4px !important;
+  background: #d1d5db !important;
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #000 !important;
+}

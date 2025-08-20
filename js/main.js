@@ -41,20 +41,19 @@ const videoWrapper = document.getElementById("videoWrapper");
 const closeBtn = document.getElementById("closeBtn");
 const videoPlayer = document.getElementById("videoPlayer");
 
-// Khi bấm play
+// handle play
 playBtn.addEventListener("click", () => {
   thumbnail.classList.add("hidden");
   videoWrapper.classList.remove("hidden");
-  // autoplay video
-  videoPlayer.src += "&autoplay=1";
+  videoPlayer.play();
 });
 
-// Khi bấm X
+// handle close
 closeBtn.addEventListener("click", () => {
   videoWrapper.classList.add("hidden");
   thumbnail.classList.remove("hidden");
-  // stop video bằng reload lại src
-  videoPlayer.src = videoPlayer.src.replace("&autoplay=1", "");
+  videoPlayer.pause();
+  videoPlayer.currentTime = 0;
 });
 
 // Moment in motion section
@@ -139,5 +138,61 @@ document.addEventListener("DOMContentLoaded", () => {
     if (activeIndex !== -1) {
       smoothTransition(activeIndex);
     }
+  }
+});
+
+// Review section
+const swiperReview = new Swiper(".swiperReview", {
+  slidesPerView: 3,
+  slidesPerGroup: 3,
+  spaceBetween: 20,
+  watchSlidesProgress: true,
+  loop: false,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    0: { slidesPerView: 1.2, slidesPerGroup: 5 },
+    1024: { slidesPerView: 3, slidesPerGroup: 3 },
+  },
+  // allowTouchMove: true,
+  resistanceRatio: 0,
+  slideToClickedSlide: true,
+});
+
+// FQAs section
+document.querySelectorAll(".faq-item").forEach(function (item) {
+  item.querySelector(".faq-toggle").addEventListener("click", function () {
+    // close accordion
+    document.querySelectorAll(".faq-item").forEach(function (el) {
+      el.classList.remove("active");
+      el.querySelector(".faq-content").classList.remove("active");
+      el.querySelector(".faq-icon").textContent = "+";
+      el.querySelector(".faq-content").style.maxHeight = null;
+      el.querySelector(".faq-content").style.opacity = 0;
+      el.querySelector(".faq-content").style.transform = "translateY(-10px)";
+    });
+    // open accordion
+    item.classList.add("active");
+    item.querySelector(".faq-content").classList.add("active");
+    item.querySelector(".faq-icon").textContent = "-";
+    item.querySelector(".faq-content").style.maxHeight = "270px";
+    item.querySelector(".faq-content").style.opacity = 1;
+    item.querySelector(".faq-content").style.transform = "translateY(0)";
+  });
+});
+
+// Chat section
+const chatBtn = document.getElementById("chat-btn");
+const chatPopup = document.getElementById("chat-popup");
+const chatIcon = document.getElementById("chat-icon");
+
+chatBtn.addEventListener("click", () => {
+  chatPopup.classList.toggle("hidden");
+  if (chatPopup.classList.contains("hidden")) {
+    chatIcon.src = "./assets/img/icon.png";
+  } else {
+    chatIcon.src = "./assets/img/close.png";
   }
 });
