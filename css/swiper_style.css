@@ -1,7 +1,7 @@
-.swiper-button-next::after,
-.swiper-button-prev::after {
+/* .product-next::after,
+.product-prev::after {
   content: none;
-}
+} */
 
 /* Review section */
 .swiper-pagination-bullet {
@@ -14,4 +14,10 @@
 
 .swiper-pagination-bullet-active {
   background: #000 !important;
+}
+
+.mySwiperThumb .swiper-slide-thumb-active img {
+  border-width: 2px;
+  border-style: solid;
+  border-color: #000;
 }

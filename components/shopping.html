@@ -1,0 +1,536 @@
+<section class="py-[2.5rem]">
+  <main class="grid grid-cols-1 md:grid-cols-[7fr_5fr] gap-2 md:gap-8">
+    <!-- Left: Product Image -->
+    <div class="grid grid-cols-2 gap-4 hidden md:grid">
+      <!-- Row 1 -->
+      <img
+        src="../assets/img/banner_30.webp"
+        class="col-span-2 h-[800px] object-cover w-full h-full"
+      />
+
+      <!-- Row 2 -->
+      <img
+        src="../assets/img/banner_31.webp"
+        class="h-[400px] object-cover w-full h-1/2"
+      />
+      <img
+        src="../assets/img/banner_32.webp"
+        class="h-[400px] object-cover w-full h-1/2"
+      />
+
+      <!-- Row 3 -->
+      <img
+        src="../assets/img/banner_33.webp"
+        class="col-span-2 h-[800px] object-cover w-full h-full"
+      />
+
+      <!-- Row 4 -->
+      <img
+        src="../assets/img/banner_34.webp"
+        class="h-[400px] object-cover w-full h-1/2"
+      />
+      <img
+        src="../assets/img/banner_35.webp"
+        class="h-[400px] object-cover w-full h-1/2"
+      />
+
+      <!-- Row 5 -->
+      <img
+        id="row5"
+        src="../assets/img/banner_36.webp"
+        class="col-span-2 h-[800px] object-cover w-full h-full"
+      />
+    </div>
+
+    <!-- Swiper layout MOBILE -->
+    <div class="swiper mySwiper2 w-full md:hidden h-[530px]">
+      <div class="swiper-wrapper h-full">
+        <div class="swiper-slide">
+          <img
+            src="../assets/img/banner_30.webp"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="../assets/img/banner_31.webp"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="../assets/img/banner_32.webp"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="../assets/img/banner_33.webp"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="../assets/img/banner_34.webp"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="../assets/img/banner_35.webp"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="../assets/img/banner_36.webp"
+            class="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Thumbnail Swiper -->
+    <div class="swiper mySwiperThumb w-full md:hidden h-[100px]">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide cursor-pointer">
+          <img
+            src="../assets/img/banner_30.webp"
+            class="h-full w-80 object-cover border border-gray-200"
+          />
+        </div>
+        <div class="swiper-slide cursor-pointer">
+          <img
+            src="../assets/img/banner_31.webp"
+            class="h-full w-80 object-cover border border-gray-200"
+          />
+        </div>
+        <div class="swiper-slide cursor-pointer">
+          <img
+            src="../assets/img/banner_32.webp"
+            class="h-full w-80 object-cover border border-gray-200"
+          />
+        </div>
+        <div class="swiper-slide cursor-pointer">
+          <img
+            src="../assets/img/banner_33.webp"
+            class="h-full w-80 object-cover border border-gray-200"
+          />
+        </div>
+        <div class="swiper-slide cursor-pointer">
+          <img
+            src="../assets/img/banner_34.webp"
+            class="h-full w-80 object-cover border border-gray-200"
+          />
+        </div>
+        <div class="swiper-slide cursor-pointer">
+          <img
+            src="../assets/img/banner_35.webp"
+            class="h-full w-80 object-cover border border-gray-200"
+          />
+        </div>
+        <div class="swiper-slide cursor-pointer">
+          <img
+            src="../assets/img/banner_36.webp"
+            class="h-full w-80 object-cover border border-gray-200"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Product Info -->
+    <div class="sticky top-0 h-fit d-none text-[#171717]">
+      <div class="product-info-container sticky top-0 self-start max-h-fit">
+        <!-- Brand -->
+        <div class="font-normal text-[#8A8A8A] leading-[24px] text-sm pt-3">
+          YIYUAN
+        </div>
+
+        <!-- Title -->
+        <h1 class="text-[2rem] font-medium leading-tight mb-2">
+          Elegant Summer Floral Print Long Dress
+        </h1>
+
+        <!-- Rating -->
+        <div class="flex items-center mb-4">
+          <div class="flex text-yellow-500 text-sm">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <span class="ml-2 text-gray-600 text-sm">(512)</span>
+        </div>
+
+        <!-- Price -->
+        <div class="flex items-center space-x-3 mb-2">
+          <span class="text-2xl font-semibold text-red-600">$27.99</span>
+          <span class="text-gray-400 line-through">$68.15</span>
+          <span class="bg-red-600 text-white text-xs px-3 py-1 rounded ml-2"
+            >SALE</span
+          >
+        </div>
+        <div class="text-sm text-gray-500 mb-4">
+          Tax included. <a href="#" class="underline">Shipping</a> calculated at
+          checkout.
+        </div>
+
+        <!-- Size options -->
+        <div class="mb-6" id="size-selector">
+          <div class="flex justify-between items-center text-sm mb-2">
+            <span class="font-medium"
+              >Size: <span id="selected-size">S</span></span
+            >
+            <span class="underline cursor-pointer">Size Guide</span>
+          </div>
+          <div class="flex gap-2">
+            <div
+              class="size-option flex-1 h-[50px] flex items-center justify-center px-3 py-2 border border-[#e6e6e6] text-center cursor-pointer font-medium bg-black text-white"
+              data-size="S"
+            >
+              S
+            </div>
+            <div
+              class="size-option flex-1 h-[50px] flex items-center justify-center px-3 py-2 border border-[#e6e6e6] text-center cursor-pointer font-medium"
+              data-size="M"
+            >
+              M
+            </div>
+            <div
+              class="size-option flex-1 h-[50px] flex items-center justify-center px-3 py-2 border border-[#e6e6e6] text-center cursor-pointer font-medium"
+              data-size="L"
+            >
+              L
+            </div>
+            <div
+              class="size-option flex-1 h-[50px] flex items-center justify-center px-3 py-2 border border-[#e6e6e6] text-center cursor-pointer font-medium"
+              data-size="XL"
+            >
+              XL
+            </div>
+          </div>
+        </div>
+
+        <!-- Color options -->
+        <div class="mb-6" id="color-selector">
+          <div class="text-sm font-medium mb-2">
+            Color: <span id="selected-color">Green</span>
+          </div>
+          <div class="flex gap-3">
+            <div
+              class="color-option w-[60px] h-[80px] border-2 border-[#171717] p-1 cursor-pointer overflow-hidden flex items-center justify-center"
+              data-color="White"
+            >
+              <img
+                src="../assets/img/banner_30.webp"
+                alt="White"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div
+              class="color-option w-[60px] h-[80px] border cursor-pointer overflow-hidden flex items-center justify-center"
+              data-color="Black"
+            >
+              <img
+                src="../assets/img/banner_32.webp"
+                alt="Black"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div
+              class="color-option w-[60px] h-[80px] border cursor-pointer overflow-hidden flex items-center justify-center"
+              data-color="Green"
+            >
+              <img
+                src="../assets/img/banner_34.webp"
+                alt="Green"
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Low stock -->
+        <div class="mb-6">
+          <p class="text-[#a77a06] font-medium text-gray-700 mb-2">
+            Low stock (20 units left)
+          </p>
+          <div class="w-full bg-gray-200 rounded-[8px] h-2 overflow-hidden">
+            <div
+              class="h-2 rounded-[8px]"
+              style="width: 20%; background-color: #a77a06"
+            ></div>
+          </div>
+        </div>
+
+        <!-- Quantity + Add to cart -->
+        <div class="flex items-center mb-6 gap-3">
+          <div
+            class="flex items-center border border-gray-300 rounded-full px-4 py-2 w-fit"
+          >
+            <button
+              class="text-2xl font-light px-2 text-gray-700 hover:text-black"
+              onclick="changeQuantity(-1)"
+            >
+              −
+            </button>
+            <input
+              type="number"
+              id="quantity"
+              min="1"
+              value="1"
+              class="w-12 text-center border-none outline-none text-lg text-gray-800 bg-transparent"
+            />
+            <button
+              class="text-2xl font-light px-2 text-gray-700 hover:text-black"
+              onclick="changeQuantity(1)"
+            >
+              +
+            </button>
+          </div>
+
+          <button
+            class="w-full bg-[#dc2625] text-white px-6 py-3 rounded-full hover:bg-black transition"
+          >
+            Add To Cart
+          </button>
+        </div>
+
+        <!-- Buy now -->
+        <div class="mb-4">
+          <button
+            class="w-full bg-black text-white px-6 py-3 rounded-full hover:bg-[#646464] transition"
+          >
+            Buy It Now
+          </button>
+          <p class="text-center mt-2 text-gray-500">More payment options</p>
+        </div>
+
+        <!-- Shipping info -->
+        <div class="flex items-center gap-6 mt-6">
+          <div class="flex items-center text-sm text-gray-600">
+            <i class="fa-solid fa-box"></i>
+            <p class="ml-3">Orders over $50 ship free</p>
+          </div>
+          <div class="flex items-center text-sm text-gray-600">
+            <i class="fa-solid fa-rotate-right"></i>
+            <p class="ml-3">30 day returns</p>
+          </div>
+        </div>
+
+        <!-- Pairs well with -->
+        <div class="mt-8">
+          <p class="text-lg font-medium mb-4">Pairs well with</p>
+          <div class="grid grid-cols-3 gap-2">
+            <!-- product card -->
+            <div class="relative group flex flex-col h-full">
+              <img
+                src="../assets/img/Rectangle-1154.webp"
+                alt="product image"
+                class="w-full aspect-[3/4] object-cover"
+              />
+              <button
+                class="absolute right-3 bottom-0 opacity-0 group-hover:bottom-[100px] group-hover:opacity-100 transition-all duration-300 ease-out bg-black text-white w-10 h-10 flex items-center justify-center rounded-full shadow"
+              >
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+              <p class="mt-2 font-medium text-sm">Cut Out Midi Dress</p>
+              <div class="flex items-center pt-2">
+                <p class="text-gray-900 font-semibold text-sm">$20.00</p>
+                <p class="text-gray-400 line-through text-sm ml-2">$40.00</p>
+              </div>
+            </div>
+            <div class="relative group flex flex-col h-full">
+              <img
+                src="../assets/img/Rectangle-1153-_1.webp"
+                alt="product image"
+                class="w-full aspect-[3/4] object-cover"
+              />
+              <button
+                class="absolute right-3 bottom-0 opacity-0 group-hover:bottom-[100px] group-hover:opacity-100 transition-all duration-300 ease-out bg-black text-white w-10 h-10 flex items-center justify-center rounded-full shadow"
+              >
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+              <p class="mt-2 font-medium text-sm">
+                Casa Puff Sleeve Mini Dress
+              </p>
+              <div class="flex items-center pt-2">
+                <p class="text-gray-900 font-semibold text-sm">$21.00</p>
+                <p class="text-gray-400 line-through text-sm ml-2">$30.00</p>
+              </div>
+            </div>
+            <div class="relative group flex flex-col h-full">
+              <img
+                src="../assets/img/Rectangle-1154-_1.webp"
+                alt="product image"
+                class="w-full aspect-[3/4] object-cover"
+              />
+              <button
+                class="absolute right-3 bottom-0 opacity-0 group-hover:bottom-[100px] group-hover:opacity-100 transition-all duration-300 ease-out bg-black text-white w-10 h-10 flex items-center justify-center rounded-full shadow"
+              >
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+              <p class="mt-2 font-medium text-sm">
+                Arista Tulip Sleeve Mini Dress
+              </p>
+              <div class="flex items-center pt-2">
+                <p class="text-gray-900 font-semibold text-sm">$32.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Accordion -->
+        <div class="mt-8 divide-y" id="accordion">
+          <div>
+            <div
+              class="accordion-header py-4 flex justify-between items-center cursor-pointer"
+            >
+              <p class="text-[19px] font-semibold">Returns & Exchanges</p>
+              <span class="text-xl font-semibold">+</span>
+            </div>
+            <div class="accordion-content hidden font-normal leading-[26px]">
+              If you're not completely happy with your purchase, we’re happy to
+              offer a refund or exchange, as long as: Items are returned within
+              <b>30 days</b> with the original receipt Items are
+              <b>unworn, in original condition</b> with all tags attached
+              Refunds will be made to your original payment method. Delivery
+              costs are non-refundable unless the item is faulty or incorrect.
+              To return or exchange an online purchase, please contact our
+              customer service for the return address. Exchanges depend on stock
+              availability
+            </div>
+          </div>
+          <div>
+            <div
+              class="accordion-header py-4 flex justify-between items-center cursor-pointer"
+            >
+              <p class="text-[19px] font-semibold">Fabric care rules</p>
+              <span class="text-xl font-semibold">+</span>
+            </div>
+            <div class="accordion-content hidden font-normal leading-[26px]">
+              To avoid shrinkage, pre-wash natural fibers the same way you plan
+              to wash the finished item, including drying.<br />
+              Wash light and bright colors separately, especially in the first
+              few washes. Take extra care with high-contrast prints (e.g. red,
+              black, navy on light fabric) — cold wash and dry promptly to
+              prevent color bleed.<br />
+              Delicate fabrics like satins, sequined, beaded, foiled, or
+              specialty weights may need special care.<br />
+              Always follow care instructions, as we can’t accept claims for
+              items laundered incorrectly. For questions, feel free to contact
+              us.
+            </div>
+          </div>
+          <div>
+            <div
+              class="accordion-header py-4 flex justify-between items-center cursor-pointer"
+            >
+              <p class="text-[19px] font-semibold">Shipping</p>
+              <span class="text-xl font-semibold">-</span>
+            </div>
+            <div class="accordion-content hidden font-normal leading-[26px]">
+              Shipment processing times <br />
+              All orders are processed within 3-10 business days (excluding
+              weekends and holidays) after the order is placed. Please note that
+              during high-volume periods, processing time may take longer than
+              usual.
+            </div>
+          </div>
+        </div>
+
+        <!-- Share -->
+        <div class="flex items-center gap-2 mt-6 cursor-pointer">
+          <i class="fa-solid fa-arrow-up-from-bracket"></i>
+          <p class="text-gray-500 text-sm">Share</p>
+        </div>
+      </div>
+    </div>
+  </main>
+</section>
+
+<script>
+  const colorContainer = document.querySelector("#color-selector");
+  const colorOptions = colorContainer.querySelectorAll(".color-option");
+  const colorText = document.querySelector("#selected-color");
+
+  colorOptions.forEach((option) => {
+    option.addEventListener("click", () => {
+      colorOptions.forEach((el) =>
+        el.classList.remove("border-2", "border-[#171717]", "p-1")
+      );
+      option.classList.add("border-2", "border-[#171717]", "p-1");
+      colorText.textContent = option.dataset.color;
+    });
+  });
+
+  //size
+  const sizeSelector = document.querySelector("#size-selector");
+  const sizeOptions = sizeSelector.querySelectorAll(".size-option");
+  const selectedSizeText = document.getElementById("selected-size");
+
+  sizeOptions.forEach((option) => {
+    option.addEventListener("click", () => {
+      sizeOptions.forEach((el) =>
+        el.classList.remove("bg-black", "text-white")
+      );
+      option.classList.add("bg-black", "text-white");
+      selectedSizeText.textContent = option.dataset.size;
+    });
+  });
+
+  //accordian
+  document
+    .querySelectorAll("#accordion .accordion-header")
+    .forEach((header) => {
+      header.addEventListener("click", () => {
+        const content = header.nextElementSibling;
+        const icon = header.querySelector("span");
+
+        document
+          .querySelectorAll("#accordion .accordion-content")
+          .forEach((el) => {
+            if (el !== content) {
+              el.classList.add("hidden");
+              el.previousElementSibling.querySelector("span").textContent = "+";
+            }
+          });
+
+        content.classList.toggle("hidden");
+        icon.textContent = content.classList.contains("hidden") ? "+" : "-";
+      });
+    });
+
+  //gallery mobile
+  var swiperThumb = new Swiper(".mySwiperThumb", {
+    spaceBetween: 10,
+    slidesPerView: 5,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+
+  var swiperMain = new Swiper(".mySwiper2", {
+    spaceBetween: 6,
+    thumbs: {
+      swiper: swiperThumb,
+    },
+  });
+
+  function changeQuantity(delta) {
+    const quantityInput = document.getElementById("quantity");
+    let currentValue = parseInt(quantityInput.value) || 1;
+
+    // Tăng/giảm giá trị và đảm bảo không nhỏ hơn 1
+    currentValue = Math.max(1, currentValue + delta);
+
+    // Cập nhật giá trị vào input
+    quantityInput.value = currentValue;
+  }
+
+  // Thêm sự kiện cho input để validate khi user nhập trực tiếp
+  document.getElementById("quantity").addEventListener("change", function () {
+    let value = parseInt(this.value) || 1;
+    this.value = Math.max(1, value);
+  });
+</script>

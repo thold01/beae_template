@@ -1,36 +1,17 @@
-// List product section
-const swiper = new Swiper(".swiper", {
-  // Optional parameters
-  direction: "horizontal",
-  loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: ".swiper-scrollbar",
-  },
-});
-
+// product section
 const swiperProduct = new Swiper(".productSwiper", {
-  slidesPerView: 1,
+  slidesPerView: 4,
+  slidesPerGroup: 2,
   spaceBetween: 20,
+  direction: "horizontal",
+  loop: false,
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".product-next",
+    prevEl: ".product-prev",
   },
   breakpoints: {
-    640: { slidesPerView: 2 },
-    1024: { slidesPerView: 4 },
+    0: { slidesPerView: 2, slidesPerGroup: 2 },
+    1024: { slidesPerView: 4, slidesPerGroup: 2 },
   },
 });
 

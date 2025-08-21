@@ -1,0 +1,45 @@
+<div class="fixed bottom-4 right-4 z-50 hidden md:block">
+  <!-- Popup -->
+  <div
+    id="chat-popup"
+    class="hidden w-80 h-96 rounded-2xl shadow-lg flex flex-col"
+  >
+    <!-- Header -->
+    <div
+      class="flex justify-between items-center px-4 py-2 bg-blue-600 rounded-t-2xl"
+    >
+      <h3 class="text-white font-medium">Chat with us</h3>
+      <button id="close-btn" class="text-white text-xl">&times;</button>
+    </div>
+    <!-- Body -->
+    <div class="flex-1 p-4 overflow-y-auto text-sm text-gray-700">
+      <p>Hello 👋, how can we help you?</p>
+    </div>
+    <!-- Input -->
+    <div class="p-2 border-t flex">
+      <input
+        type="text"
+        placeholder="Type a message..."
+        class="flex-1 px-3 py-2 text-sm border rounded-lg focus:outline-none"
+      />
+      <button class="ml-2 px-4 py-2 bg-blue-600 text-white rounded-lg">
+        Send
+      </button>
+    </div>
+  </div>
+
+  <!-- Chat Button -->
+  <div class="flex justify-end">
+    <button
+      id="chat-btn"
+      class="w-14 h-14 bg-blue-600 text-white rounded-full flex items-center justify-center shadow-lg text-2xl"
+    >
+      <img
+        id="chat-icon"
+        src="./assets/img/icon.png"
+        alt="chat"
+        class="w-6 h-6 object-contain"
+      />
+    </button>
+  </div>
+</div>

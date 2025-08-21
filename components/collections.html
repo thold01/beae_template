@@ -1,0 +1,99 @@
+<section class="collections py-[2.5rem] bg-white m-0 md:mx-[7.5rem]">
+  <div class="grid grid-cols-2 md:flex gap-2 h-[500px]" id="collectionFlex">
+    <!-- Item 1 -->
+    <div
+      class="relative flex-[2] transition-all duration-700 ease-in-out hover:flex-[2]"
+    >
+      <img
+        src="../assets/img/collection1.jpg"
+        class="w-full h-full object-cover object-center"
+      />
+      <div
+        class="absolute inset-0 bg-black/5 transition duration-500 group-hover:bg-black/20"
+      ></div>
+      <div class="absolute bottom-6 left-6 text-white">
+        <p class="text-[19px]">Best seller</p>
+        <p class="text-sm">21 products</p>
+      </div>
+    </div>
+
+    <!-- Item 2 -->
+    <div
+      class="relative flex-[1] transition-all duration-700 ease-in-out hover:flex-[2]"
+    >
+      <img
+        src="../assets/img/collection2.jpg"
+        class="w-full h-full object-cover object-center"
+      />
+      <div
+        class="absolute inset-0 bg-black/5 transition duration-500 group-hover:bg-black/20"
+      ></div>
+
+      <div class="absolute bottom-6 left-6 text-white">
+        <p class="text-[19px]">Skirts</p>
+        <p class="text-sm">30 products</p>
+      </div>
+    </div>
+
+    <!-- Item 3 -->
+    <div
+      class="relative flex-[1] transition-all duration-700 ease-in-out hover:flex-[2]"
+    >
+      <img
+        src="../assets/img/collection3.jpg"
+        class="w-full h-full object-cover object-center"
+      />
+      <div
+        class="absolute inset-0 bg-black/5 transition duration-500 group-hover:bg-black/20"
+      ></div>
+
+      <div class="absolute bottom-6 left-6 text-white">
+        <p class="text-[19px]">Bottoms</p>
+        <p class="text-sm">25 products</p>
+      </div>
+    </div>
+
+    <!-- Item 4 -->
+    <div
+      class="relative flex-[1] transition-all duration-700 ease-in-out hover:flex-[2]"
+    >
+      <img
+        src="../assets/img/collection4.jpg"
+        class="w-full h-full object-cover object-center"
+      />
+      <div
+        class="absolute inset-0 bg-black/5 transition duration-500 group-hover:bg-black/20"
+      ></div>
+
+      <div
+        class="absolute bottom-6 left-6 right-6 flex items-center justify-between text-white"
+      >
+        <div>
+          <p class="text-[19px]">Accessories</p>
+          <p class="text-sm">35 products</p>
+        </div>
+        <a href="#" class="text-sm font-medium underline hover:no-underline">
+          Shop now →
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const items = document.querySelectorAll("#collectionFlex > div");
+
+  items.forEach((item, idx) => {
+    item.addEventListener("mouseenter", () => {
+      items.forEach((i) => i.classList.replace("flex-[2]", "flex-[1]"));
+      item.classList.replace("flex-[1]", "flex-[2]");
+    });
+
+    item.addEventListener("mouseleave", () => {
+      items.forEach((i, iIdx) => {
+        i.classList.replace("flex-[2]", "flex-[1]");
+        if (iIdx === 0) i.classList.replace("flex-[1]", "flex-[2]");
+      });
+    });
+  });
+</script>

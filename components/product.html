@@ -1,0 +1,277 @@
+<section class="py-[2.5rem]">
+  <!-- Swiper Controls -->
+  <div class="flex justify-between mt-6">
+    <h2 class="text-2xl font-bold mb-6">Our Collections</h2>
+    <div class="flex justify-between gap-4">
+      <div class="product-prev !static !text-[#000000]">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-4 h-4"
+          fill="currentColor"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"
+          ></path>
+        </svg>
+      </div>
+      <div class="product-next !static !text-[#000000]">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-4 h-4"
+          fill="currentColor"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+          ></path>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- Swiper Container -->
+  <div class="swiper productSwiper">
+    <div class="swiper-wrapper md:min-h-[500px]">
+      <!-- Item 1 -->
+      <div class="swiper-slide relative group flex flex-col">
+        <div class="relative w-full aspect-[3/4]">
+          <img
+            src="../assets/img/product1.jpg"
+            alt="product"
+            class="w-full h-full object-cover"
+          />
+          <span
+            class="absolute top-4 left-4 bg-red-600 text-white text-xs font-semibold px-2 py-1 rounded"
+            >SAVE 16%</span
+          >
+          <div
+            class="absolute bottom-5 w-full flex justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"
+          >
+            <button
+              class="text-[1.1rem] px-2 py-[14px] rounded-full w-[90%] bg-[#1f1f1f] text-white hover:opacity-70 transition"
+            >
+              <i class="fa-solid fa-plus mr-2"></i> Quick Add
+            </button>
+          </div>
+        </div>
+        <div class="p-4 flex flex-col justify-between flex-1">
+          <p class="text-gray-400 text-sm uppercase tracking-wide mb-1">
+            ZEAGOO
+          </p>
+          <h2 class="text-[1rem] font-medium leading-snug line-clamp-2">
+            Summer Dresses V Neck Sleeveless Casual
+          </h2>
+          <div class="flex items-center text-yellow-500 text-sm mt-2">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i>
+            <span class="text-gray-500 ml-2 text-sm">(512)</span>
+          </div>
+          <div class="flex items-center gap-2 mt-3">
+            <span class="text-lg font-bold">$19.99</span>
+            <span class="text-gray-400 line-through">$23.99</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="swiper-slide relative group flex flex-col">
+        <div class="relative w-full aspect-[3/4]">
+          <img
+            src="../assets/img/product2.jpg"
+            alt="product"
+            class="w-full h-full object-cover"
+          />
+          <div
+            class="absolute bottom-5 w-full flex justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"
+          >
+            <button
+              class="text-[1.1rem] px-2 py-[14px] rounded-full w-[90%] bg-[#1f1f1f] text-white hover:opacity-70 transition"
+            >
+              <i class="fa-solid fa-plus mr-2"></i> Quick Add
+            </button>
+          </div>
+        </div>
+        <div class="p-4 flex flex-col justify-between flex-1">
+          <p class="text-gray-400 text-sm uppercase tracking-wide mb-1">
+            MANGO
+          </p>
+          <h2 class="text-[1rem] font-medium leading-snug line-clamp-2">
+            Casual Skirts Collection
+          </h2>
+          <div class="flex items-center text-yellow-500 text-sm mt-2">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star-half-alt"></i>
+            <span class="text-gray-500 ml-2 text-sm">(320)</span>
+          </div>
+          <div class="flex items-center gap-2 mt-3">
+            <span class="text-lg font-bold">$29.99</span>
+            <span class="text-gray-400 line-through">$35.99</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="swiper-slide relative group flex flex-col">
+        <div class="relative w-full aspect-[3/4]">
+          <img
+            src="../assets/img/product3.jpg"
+            alt="product"
+            class="w-full h-full object-cover"
+          />
+          <div
+            class="absolute bottom-5 w-full flex justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"
+          >
+            <button
+              class="text-[1.1rem] px-2 py-[14px] rounded-full w-[90%] bg-[#1f1f1f] text-white hover:opacity-70 transition"
+            >
+              <i class="fa-solid fa-plus mr-2"></i> Quick Add
+            </button>
+          </div>
+        </div>
+        <div class="p-4 flex flex-col justify-between flex-1">
+          <p class="text-gray-400 text-sm uppercase tracking-wide mb-1">H&M</p>
+          <h2 class="text-[1rem] font-medium leading-snug line-clamp-2">
+            Trendy Bottoms Collection
+          </h2>
+          <div class="flex items-center text-yellow-500 text-sm mt-2">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-regular fa-star"></i>
+            <span class="text-gray-500 ml-2 text-sm">(210)</span>
+          </div>
+          <div class="flex items-center gap-2 mt-3">
+            <span class="text-lg font-bold">$24.99</span>
+            <span class="text-gray-400 line-through">$27.99</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="swiper-slide relative group flex flex-col">
+        <div class="relative w-full aspect-[3/4]">
+          <img
+            src="../assets/img/product4.jpg"
+            alt="product"
+            class="w-full h-full object-cover"
+          />
+          <div
+            class="absolute bottom-5 w-full flex justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"
+          >
+            <button
+              class="text-[1.1rem] px-2 py-[14px] rounded-full w-[90%] bg-[#1f1f1f] text-white hover:opacity-70 transition"
+            >
+              <i class="fa-solid fa-plus mr-2"></i> Quick Add
+            </button>
+          </div>
+        </div>
+        <div class="p-4 flex flex-col justify-between flex-1">
+          <p class="text-gray-400 text-sm uppercase tracking-wide mb-1">ZARA</p>
+          <h2 class="text-[1rem] font-medium leading-snug line-clamp-2">
+            Fashion Accessories Pack
+          </h2>
+          <div class="flex items-center text-yellow-500 text-sm mt-2">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star-half-alt"></i
+            ><i class="fa-regular fa-star"></i>
+            <span class="text-gray-500 ml-2 text-sm">(189)</span>
+          </div>
+          <div class="flex items-center gap-2 mt-3">
+            <span class="text-lg font-bold">$15.99</span>
+            <span class="text-gray-400 line-through">$18.99</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 5 -->
+      <div class="swiper-slide relative group flex flex-col">
+        <div class="relative w-full aspect-[3/4]">
+          <img
+            src="../assets/img/product5.jpg"
+            alt="product"
+            class="w-full h-full object-cover"
+          />
+          <span
+            class="absolute top-4 left-4 bg-red-600 text-white text-xs font-semibold px-2 py-1 rounded"
+            >SAVE 25%</span
+          >
+          <div
+            class="absolute bottom-5 w-full flex justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"
+          >
+            <button
+              class="text-[1.1rem] px-2 py-[14px] rounded-full w-[90%] bg-[#1f1f1f] text-white hover:opacity-70 transition"
+            >
+              <i class="fa-solid fa-plus mr-2"></i> Quick Add
+            </button>
+          </div>
+        </div>
+        <div class="p-4 flex flex-col justify-between flex-1">
+          <p class="text-gray-400 text-sm uppercase tracking-wide mb-1">
+            UNIQLO
+          </p>
+          <h2 class="text-[1rem] font-medium leading-snug line-clamp-2">
+            Modern Casual Wear
+          </h2>
+          <div class="flex items-center text-yellow-500 text-sm mt-2">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-regular fa-star"></i
+            ><i class="fa-regular fa-star"></i>
+            <span class="text-gray-500 ml-2 text-sm">(156)</span>
+          </div>
+          <div class="flex items-center gap-2 mt-3">
+            <span class="text-lg font-bold">$21.99</span>
+            <span class="text-gray-400 line-through">$26.99</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 6 -->
+      <div class="swiper-slide relative group flex flex-col">
+        <div class="relative w-full aspect-[3/4]">
+          <img
+            src="../assets/img/product6.jpg"
+            alt="product"
+            class="w-full h-full object-cover"
+          />
+          <span
+            class="absolute top-4 left-4 bg-red-600 text-white text-xs font-semibold px-2 py-1 rounded"
+            >SAVE 25%</span
+          >
+          <div
+            class="absolute bottom-5 w-full flex justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"
+          >
+            <button
+              class="text-[1.1rem] px-2 py-[14px] rounded-full w-[90%] bg-[#1f1f1f] text-white hover:opacity-70 transition"
+            >
+              <i class="fa-solid fa-plus mr-2"></i> Quick Add
+            </button>
+          </div>
+        </div>
+        <div class="p-4 flex flex-col justify-between flex-1">
+          <p class="text-gray-400 text-sm uppercase tracking-wide mb-1">
+            ADIDAS
+          </p>
+          <h2 class="text-[1rem] font-medium leading-snug line-clamp-2">
+            Sporty Accessories
+          </h2>
+          <div class="flex items-center text-yellow-500 text-sm mt-2">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i
+            ><i class="fa-regular fa-star"></i>
+            <span class="text-gray-500 ml-2 text-sm">(102)</span>
+          </div>
+          <div class="flex items-center gap-2 mt-3">
+            <span class="text-lg font-bold">$17.99</span>
+            <span class="text-gray-400 line-through">$23.99</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
