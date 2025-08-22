@@ -41,6 +41,19 @@ closeBtn.addEventListener("click", () => {
 const sections = document.querySelectorAll(".section");
 const imageSlides = document.querySelectorAll(".image-slide");
 let isTransitioning = false;
+const svgPlus = `
+  <svg xmlns="http://www.w3.org/2000/svg" 
+       viewBox="0 0 24 24" fill="currentColor" 
+       class="w-5 h-5">
+    <path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"></path>
+  </svg>`;
+
+const svgMinus = `
+  <svg xmlns="http://www.w3.org/2000/svg" 
+       viewBox="0 0 24 24" fill="currentColor" 
+       class="w-5 h-5">
+    <path d="M5 11V13H19V11H5Z"></path>
+  </svg>`;
 
 function smoothTransition(targetIndex) {
   if (isTransitioning) return;
@@ -72,7 +85,7 @@ sections.forEach((section, index) => {
   header.addEventListener("click", () => {
     const isActive = section.classList.contains("active");
 
-    sections.forEach((s, i) => {
+    sections.forEach((s) => {
       s.classList.remove("active", "border-black");
       s.classList.add("border-gray-200");
       s.querySelector(".section-content").classList.remove(
@@ -87,7 +100,10 @@ sections.forEach((section, index) => {
         "translate-x-[5px]"
       );
       s.querySelector(".section-title").classList.add("text-gray-500");
-      s.querySelector(".toggle-btn").textContent = "+";
+
+      // đổi về SVG plus
+      s.querySelector(".toggle-btn").innerHTML = svgPlus;
+
       s.querySelector(".section-number").classList.remove(
         "text-black",
         "border-black"
@@ -102,7 +118,10 @@ sections.forEach((section, index) => {
       section.classList.add("active", "border-black");
       content.classList.add("active", "max-h-[200px]", "opacity-100");
       title.classList.add("active", "text-black", "translate-x-[5px]");
-      toggleBtn.textContent = "−";
+
+      // đổi sang SVG minus
+      toggleBtn.innerHTML = svgMinus;
+
       section
         .querySelector(".section-number")
         .classList.add("text-black", "border-black");
